@@ -2,8 +2,10 @@ import React from "react";
 import Card from "./Card";
 
 const CardList = ({ robots }) => {
+  // if (true) {
+  //   throw new Error('AAAAAAAAAAAAAAAAAAAAAAAAAAA')
+  // }
   return (
-    // <div style={{display: "inline-block", maxWidth: "100rpm"}}>
     <div>
       {robots.map((user) => {
         return (
