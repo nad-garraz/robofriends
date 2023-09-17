@@ -8,7 +8,8 @@ import SearchBox from '../components/SearchBox';
 import Scroll from '../components/Scroll';
 // import Counter from '../components/Counter';
 
-
+//TODO: Make the robots clickeable and open a new page or tab with all the info of 
+// the clicked robot that comes from the fetch command
 
 function App() {
   // get the state
