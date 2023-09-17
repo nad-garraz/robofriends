@@ -1,26 +1,28 @@
 import './App.css';
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import  {getRobots } from '../features/robots/robotsSlice'
+import { getRobots } from '../slices/robotsSlice';
+import { changeRoute } from '../slices/routeSlice.js';
 
 import CardList from '../components/CardList';
 import SearchBox from '../components/SearchBox';
 import Scroll from '../components/Scroll';
 // import Counter from '../components/Counter';
 
-//TODO: Make the robots clickeable and open a new page or tab with all the info of 
+//TODO: Make the robots clickeable and open a new page or tab with all the info of
 // the clicked robot that comes from the fetch command
 
 function App() {
-  // get the state
-const robots = useSelector(state => state.robots.robotsArray)
+  // get the state from the store
+  const robots = useSelector((state) => state.robots.robotsArray);
+  const routeMap = useSelector((state) => state.routeMap);
   // use dispatch to send the new state info to the store
-const dispatch = useDispatch();
+  const dispatch = useDispatch();
 
   useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/users')
       .then((response) => response.json())
-      .then(users => dispatch(getRobots(users)))
+      .then((users) => dispatch(getRobots(users)))
       .catch((e) => console.log(e));
   }, []);
 
@@ -36,6 +38,10 @@ const dispatch = useDispatch();
     );
   });
 
+  function handleCardClick(routeMap) {
+    dispatch(changeRoute(routeMap));
+  }
+
   return !robots.length ? (
     <h1>Loading</h1>
   ) : (
@@ -43,7 +49,7 @@ const dispatch = useDispatch();
       <h1 className="f1">RoboFriends</h1>
       <SearchBox />
       <Scroll>
-        <CardList robots={filteredRobots} />
+        <CardList robots={filteredRobots} changeRoute={handleCardClick} />
       </Scroll>
     </div>
   );

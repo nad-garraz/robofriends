@@ -1,6 +1,10 @@
+
 function Card ({ name, email, id }) {
+
+  function handleChangeRoute(){
+  }
   return (
-    <div className='dib tc w5 h-200 grow bg-light-green br3 pa3 ma2 bw2 shadow-5'>
+    <div>
       <img alt='robots' src={`https://robohash.org/${id}?size=200x200`} />
       <div>
         <h2>{name}</h2>

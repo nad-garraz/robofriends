@@ -1,5 +1,5 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { decrement, increment } from '../features/counter/counterSlice.js';
+import { decrement, increment } from '../slices/counterSlice.js';
 
 function Counter() {
   //get state. Value es la propiedad del estado counter.

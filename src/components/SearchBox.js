@@ -1,4 +1,4 @@
-import { updateSearchField } from '../features/searchField/searchFieldSlice';
+import { updateSearchField } from '../slices/searchFieldSlice';
 import { useSelector, useDispatch } from 'react-redux';
 
 
