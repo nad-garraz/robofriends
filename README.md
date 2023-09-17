@@ -1,4 +1,4 @@
-# React Redux App
+# React Redux App: ROboFriends
 
 This is a simple React Redux app that fetches user information and displays it in the form of cards. It also includes a search bar functionality to filter the displayed users based on their name or email.
 
