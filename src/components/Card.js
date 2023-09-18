@@ -1,6 +1,6 @@
 function Card ({ name, email, id }) {
   return (
-    <div>
+    <div className="pointer">
       <img alt='robots' src={`https://robohash.org/${id}?size=200x200`} />
       <div>
         <h2>{name}</h2>

@@ -6,6 +6,7 @@ const initialState = {
 
 const searchFieldSlice = createSlice({
   name: 'searchField',
+  type: 'SEARCH_FIELD',
   initialState,
   reducers: {
     updateSearchField: (state, action) => {
