@@ -1,7 +1,7 @@
 # React Redux App: RoboFriends
 You can see it [here](https://nad-garraz.github.io/robofriends/).
 
-This is a simple React Redux app that fetches user information and displays it in the form of cards. It also includes a search bar functionality to filter the displayed users based on their name or email. Clicking a card gives you full info.
+This is a simple React Redux app that fetches user information and displays it in the form of cards. It also includes a search bar functionality to filter the displayed users based on their name or email. Clicking a card gives you extra info.
 
 ## Table of Contents
 
