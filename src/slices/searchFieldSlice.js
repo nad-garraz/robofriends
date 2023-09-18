@@ -12,8 +12,11 @@ const searchFieldSlice = createSlice({
       const newState = action.payload; //payload es la info nueva
       state.value = newState;
     },
+    resetSearchField: (state, action) => {
+      state.value = '';
+    },
   },
 });
 
-export const { updateSearchField } = searchFieldSlice.actions;
+export const { updateSearchField, resetSearchField } = searchFieldSlice.actions;
 export default searchFieldSlice.reducer;

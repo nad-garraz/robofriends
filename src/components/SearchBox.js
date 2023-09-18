@@ -1,10 +1,7 @@
 import { updateSearchField } from '../slices/searchFieldSlice';
 import { useSelector, useDispatch } from 'react-redux';
 
-
 function SearchBox() {
-  //Dispatch se encarga de mandar los cambios a 
-  //la slice donde se modificará el state.
   const dispatch = useDispatch();
 
   function handleChange(event) {
@@ -12,7 +9,7 @@ function SearchBox() {
   }
 
   //La propiedad OnChange trigerea la acción con cada
-  //input que se haga. 
+  //input que se haga.
   return (
     <div className="pa2">
       <input

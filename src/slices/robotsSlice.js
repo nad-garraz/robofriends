@@ -6,7 +6,6 @@ const initialState = {
 
 const robotsSlice = createSlice({
   name: 'robots',
-  type: 'data',
   initialState,
   reducers: {
     getRobots: (state, action) => {
@@ -16,5 +15,5 @@ const robotsSlice = createSlice({
   },
 });
 
-export const {getRobots} = robotsSlice.actions;
+export const { getRobots } = robotsSlice.actions;
 export default robotsSlice.reducer;

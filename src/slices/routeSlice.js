@@ -11,8 +11,8 @@ const routeSlice = createSlice({
   reducers: {
     changeRoute: (state, action) => {
       const newState = action.payload; //payload es la info nueva
-      state.route = newState.route;
-      console.log(state.route)
+      state.route = newState.route
+      state.id = newState.id
     },
   },
 });
