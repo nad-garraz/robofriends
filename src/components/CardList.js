@@ -11,7 +11,8 @@ function CardList({ robots, changeRoute }) {
 
         return (
           <div
-            className="dib tc w5 h-200 grow bg-light-green br3 pa3 ma2 bw2 shadow-5"
+            // className="dib tc w5 h-200 grow bg-light-green br3 pa3 ma2 bw2 shadow-5"
+            className='cards-container'
             key={user.id}
             onClick={() => changeRoute(selectedRobot)}
           >

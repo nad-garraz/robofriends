@@ -4,3 +4,28 @@ body {
   font-family: sans-serif;
   background: linear-gradient(to left, rgba(7,27,82,1) 0%, rgba(0,128,128,1) 100%); /* w3c */
 }
+
+
+.cards-container{
+  display: inline-flex;
+  margin: 10px 10px;
+  padding: 10px 10px;
+}
+
+@media screen and (width < 800px) {
+  .cards-container {
+    display: block;
+  }
+}
+
+.robo-container{
+  background: #0cffc4;
+  border: 2px solid #0cffc4;
+  object-fit: cover;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.robo-info h2 {
+  text-align: center;
+}

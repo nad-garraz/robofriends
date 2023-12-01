@@ -25,7 +25,9 @@ function App() {
     fetch('https://jsonplaceholder.typicode.com/users')
       .then((response) => response.json())
       .then((users) => dispatch(getRobots(users)))
-      .catch((e) => console.log(e));
+      .catch((e) => console.log(e))
+    return(
+    console.log('hi'));
   }, []);
 
   const filteredRobots = robots.filter((robot) => {
