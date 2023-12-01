@@ -9,3 +9,7 @@ div::-webkit-scrollbar-track {
 div::-webkit-scrollbar-thumb {
   background-color: transparent;
 }
+
+.scroll-container {
+  margin: 100px 20px;
+}

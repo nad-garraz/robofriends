@@ -7,8 +7,7 @@ function Scroll(props) {
       style={{
         overflowY: 'scroll',
         border: '5px solid #0ccac4',
-        height: '800px',
-        margin: '0px 10px',
+        height: '900px',
       }}
     >
       {props.children}
